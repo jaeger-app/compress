@@ -1,19 +1,19 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
  * @author		Eric Lamb <eric@mithra62.com>
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62, Eric Lamb
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Compress.php
+ * @filesource 	./Compress.php
  */
-namespace mithra62;
+namespace JaegerApp;
 
-use mithra62\Exceptions\CompressException;
+use JaegerApp\Exceptions\CompressException;
 
 /**
- * mithra62 - Compress Object
+ * Jaeger - Compress Object
  *
  * Handles compressing and decompressing files into various formats
  *

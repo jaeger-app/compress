@@ -1,19 +1,19 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
  * @author		Eric Lamb <eric@mithra62.com>
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62, Eric Lamb
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Exceptions/CompressException.php
+ * @filesource 	./Exceptions/CompressException.php
  */
-namespace mithra62\Exceptions;
+namespace JaegerApp\Exceptions;
 
-use mithra62\Exception;
+use JaegerApp\Exception;
 
 /**
- * mithra62 - Compression Exception Object
+ * Jaeger - Compression Exception Object
  *
  * Handles exceptions from the Compression object
  *
