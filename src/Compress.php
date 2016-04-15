@@ -17,7 +17,7 @@ use JaegerApp\Exceptions\CompressException;
  * Handles compressing and decompressing files into various formats
  *
  * @package Compression
- * @author Eric Lamb <eric@mithra62.com>
+ * @author Eric Lamb <eric@mithra62.com> 
  */
 class Compress
 {
