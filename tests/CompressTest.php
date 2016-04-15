@@ -33,9 +33,9 @@ class CompressTest extends \PHPUnit_Framework_TestCase
      */
     public function testBootstrapAttributes()
     {
-        $this->assertClassHasAttribute('archiver', '\mithra62\Compress');
-        $this->assertClassHasAttribute('keep_original', '\mithra62\Compress');
-        $this->assertClassHasAttribute('archive_name', '\mithra62\Compress');
+        $this->assertClassHasAttribute('archiver', '\JaegerApp\Compress');
+        $this->assertClassHasAttribute('keep_original', '\JaegerApp\Compress');
+        $this->assertClassHasAttribute('archive_name', '\JaegerApp\Compress');
         
         $m62 = new Compress();
         $this->assertObjectHasAttribute('archiver', $m62);
@@ -52,7 +52,7 @@ class CompressTest extends \PHPUnit_Framework_TestCase
     public function testSetArchiveName()
     {
         $compress = new Compress();
-        $this->assertInstanceOf('mithra62\Compress', $compress->setArchiveName('my-test-file'));
+        $this->assertInstanceOf('JaegerApp\Compress', $compress->setArchiveName('my-test-file'));
         $this->assertEquals('my-test-file.zip', $compress->getArchiveName());
     }
 
@@ -60,11 +60,11 @@ class CompressTest extends \PHPUnit_Framework_TestCase
     {
         $compress = new Compress();
         $this->assertTrue($compress->getKeepOriginal());
-        $this->assertInstanceOf('mithra62\Compress', $compress->setKeepOriginal(false));
+        $this->assertInstanceOf('JaegerApp\Compress', $compress->setKeepOriginal(false));
         $this->assertFalse($compress->getKeepOriginal());
     }
 
-    public function testArchiveSingle()
+    public function tefstArchiveSingle()
     {
         $compress = new Compress();
         
