@@ -1,6 +1,6 @@
 {
 	"name": "jaeger-app/compress",
-	"description": "A compression wrapper to create Zip files with PHP.",
+	"description": "A compression wrapper to manipulate Zip files with PHP using a simple interface.",
 	"require": {
 		"php": ">=5.4.0",
 		"jaeger-app/exceptions": "dev-master"
@@ -8,6 +8,10 @@
 	"require-dev": {
 		"phpunit/phpunit": "4.*"
 	},
+    "keywords": [
+        "zip",
+        "compress"
+    ],		
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"authors": [{
