@@ -1,22 +1,22 @@
 <?php
 /**
- * mithra62 - Unit Test
+ * Jaeger
  *
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/tests/BootstrapTest.php
+ * @filesource 	./tests/CompressTest.php
  */
 namespace JaegerApp;
 
 use JaegerApp\Compress;
 
 /**
- * mithra62 - Bootstrap object Unit Tests
+ * Jaeger - Compress object Unit Tests
  *
- * Contains all the unit tests for the \mithra62\Bootstrap object
+ * Contains all the unit tests for the \JaegerApp\Compress object
  *
- * @package mithra62\Tests
+ * @package Jaeger\Tests
  * @author Eric Lamb <eric@mithra62.com>
  */
 class CompressTest extends \PHPUnit_Framework_TestCase
@@ -64,7 +64,7 @@ class CompressTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($compress->getKeepOriginal());
     }
 
-    public function tefstArchiveSingle()
+    public function testArchiveSingle()
     {
         $compress = new Compress();
         
@@ -93,5 +93,15 @@ class CompressTest extends \PHPUnit_Framework_TestCase
         $compress_file_path = $compressed_path;
         $this->assertTrue(file_exists($compress_file_path));
         unlink($compress_file_path);
+    }
+    
+    /**
+     * The full path to the data directory
+     *
+     * @return string
+     */
+    protected function dataPath()
+    {
+        return realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR.'data');
     }
 }
