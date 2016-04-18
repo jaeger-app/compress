@@ -25,7 +25,7 @@ class Compress
     /**
      * Returns an instance of the archive object
      * 
-     * @var Alchemy\Zippy\Zippy
+     * @var \ZipArchive
      */
     protected $archiver = null;
 
