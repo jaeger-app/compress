@@ -7,7 +7,7 @@
  * @version		1.0
  * @filesource 	./tests/CompressTest.php
  */
-namespace JaegerApp;
+namespace JaegerApp\tests;
 
 use JaegerApp\Compress;
 
