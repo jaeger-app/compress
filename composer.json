@@ -11,8 +11,7 @@
     "keywords": [
         "zip",
         "compress"
-    ],		
-	"minimum-stability": "dev",
+    ],
 	"prefer-stable": true,
 	"authors": [{
 		"name": "Eric Lamb",
